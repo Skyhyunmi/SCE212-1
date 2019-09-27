@@ -1,0 +1,175 @@
+==15152== Memcheck, a memory error detector
+==15152== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==15152== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==15152== Command: ./assembler sample_input/example1.s
+==15152== Parent PID: 15115
+==15152== 
+==15152== 
+==15152== HEAP SUMMARY:
+==15152==     in use at exit: 5,880 bytes in 203 blocks
+==15152==   total heap usage: 207 allocs, 4 frees, 15,176 bytes allocated
+==15152== 
+==15152== 6 bytes in 1 blocks are definitely lost in loss record 1 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x401C7E: main (assembler.c:286)
+==15152== 
+==15152== 6 bytes in 1 blocks are definitely lost in loss record 2 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x401CC4: main (assembler.c:287)
+==15152== 
+==15152== 12 bytes in 2 blocks are definitely lost in loss record 3 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x401B3F: main (assembler.c:275)
+==15152== 
+==15152== 12 bytes in 2 blocks are definitely lost in loss record 4 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x4018CE: main (assembler.c:252)
+==15152== 
+==15152== 12 bytes in 2 blocks are definitely lost in loss record 5 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x401918: main (assembler.c:253)
+==15152== 
+==15152== 12 bytes in 2 blocks are definitely lost in loss record 6 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x4019D1: main (assembler.c:257)
+==15152== 
+==15152== 17 bytes in 1 blocks are definitely lost in loss record 7 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x401D19: main (assembler.c:288)
+==15152== 
+==15152== 17 bytes in 1 blocks are definitely lost in loss record 8 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x4014F0: main (assembler.c:219)
+==15152== 
+==15152== 18 bytes in 3 blocks are definitely lost in loss record 9 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x40153F: main (assembler.c:223)
+==15152== 
+==15152== 18 bytes in 3 blocks are definitely lost in loss record 10 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x401585: main (assembler.c:224)
+==15152== 
+==15152== 24 bytes in 1 blocks are still reachable in loss record 11 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4EC5489: strdup (strdup.c:42)
+==15152==    by 0x400B9B: main (assembler.c:110)
+==15152== 
+==15152== 27 bytes in 1 blocks are definitely lost in loss record 12 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x4016D8: main (assembler.c:235)
+==15152== 
+==15152== 30 bytes in 1 blocks are possibly lost in loss record 13 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4022A2: strtokenize (assembler.c:403)
+==15152==    by 0x400C84: main (assembler.c:132)
+==15152== 
+==15152== 30 bytes in 1 blocks are possibly lost in loss record 14 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4022A2: strtokenize (assembler.c:403)
+==15152==    by 0x400D95: main (assembler.c:150)
+==15152== 
+==15152== 33 bytes in 1 blocks are definitely lost in loss record 15 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x401E4D: main (assembler.c:300)
+==15152== 
+==15152== 33 bytes in 1 blocks are definitely lost in loss record 16 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x401E7A: main (assembler.c:301)
+==15152== 
+==15152== 34 bytes in 2 blocks are definitely lost in loss record 17 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x401B76: main (assembler.c:276)
+==15152== 
+==15152== 36 bytes in 6 blocks are definitely lost in loss record 18 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x4013EE: main (assembler.c:214)
+==15152== 
+==15152== 36 bytes in 6 blocks are definitely lost in loss record 19 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x401438: main (assembler.c:215)
+==15152== 
+==15152== 48 bytes in 1 blocks are still reachable in loss record 20 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4022C3: strtokenize (assembler.c:405)
+==15152==    by 0x400C84: main (assembler.c:132)
+==15152== 
+==15152== 48 bytes in 1 blocks are still reachable in loss record 21 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4022C3: strtokenize (assembler.c:405)
+==15152==    by 0x400D95: main (assembler.c:150)
+==15152== 
+==15152== 48 bytes in 8 blocks are definitely lost in loss record 22 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x4012BE: main (assembler.c:207)
+==15152== 
+==15152== 48 bytes in 8 blocks are definitely lost in loss record 23 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x401308: main (assembler.c:208)
+==15152== 
+==15152== 48 bytes in 8 blocks are definitely lost in loss record 24 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x40134E: main (assembler.c:209)
+==15152== 
+==15152== 51 bytes in 3 blocks are definitely lost in loss record 25 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x40162B: main (assembler.c:228)
+==15152== 
+==15152== 85 bytes in 5 blocks are definitely lost in loss record 26 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x4014A1: main (assembler.c:217)
+==15152== 
+==15152== 99 bytes in 3 blocks are definitely lost in loss record 27 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4021AE: itob (assembler.c:376)
+==15152==    by 0x402099: main (assembler.c:330)
+==15152== 
+==15152== 960 bytes in 32 blocks are indirectly lost in loss record 28 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4022A2: strtokenize (assembler.c:403)
+==15152==    by 0x400C84: main (assembler.c:132)
+==15152== 
+==15152== 960 bytes in 32 blocks are indirectly lost in loss record 29 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4022A2: strtokenize (assembler.c:403)
+==15152==    by 0x400D95: main (assembler.c:150)
+==15152== 
+==15152== 2,496 (1,536 direct, 960 indirect) bytes in 32 blocks are definitely lost in loss record 30 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4022C3: strtokenize (assembler.c:405)
+==15152==    by 0x400C84: main (assembler.c:132)
+==15152== 
+==15152== 2,496 (1,536 direct, 960 indirect) bytes in 32 blocks are definitely lost in loss record 31 of 31
+==15152==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15152==    by 0x4022C3: strtokenize (assembler.c:405)
+==15152==    by 0x400D95: main (assembler.c:150)
+==15152== 
+==15152== LEAK SUMMARY:
+==15152==    definitely lost: 3,780 bytes in 134 blocks
+==15152==    indirectly lost: 1,920 bytes in 64 blocks
+==15152==      possibly lost: 60 bytes in 2 blocks
+==15152==    still reachable: 120 bytes in 3 blocks
+==15152==         suppressed: 0 bytes in 0 blocks
+==15152== 
+==15152== For counts of detected and suppressed errors, rerun with: -v
+==15152== ERROR SUMMARY: 26 errors from 26 contexts (suppressed: 0 from 0)
